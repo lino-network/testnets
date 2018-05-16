@@ -1,0 +1,139 @@
+{
+  "validators": [
+    {
+      "pub_key": {
+        "type":"AC26791624DE60",
+         "value":"MV5P+bW3Inj5TYlHUUaeTQd/xZRB1xo7fYFpnrlnGaE="
+      },
+      "power": 10,
+      "name": "lino-1"
+    },
+    {
+      "pub_key": {
+        "type":"AC26791624DE60",
+        "value":"IrFo7eotx+Q05TrlqVTj2OFLMjQfjyaSLPCi9mXrx5k="
+      },
+      "power": 10,
+      "name": "lino-2"
+    },
+    {
+      "pub_key": {
+        "type":"AC26791624DE60",
+        "value":"rgH4I9Zu+L5OK09IRCwyeeEmtHsHrYwoQIJPc99NKVo="
+      },
+      "power": 10,
+      "name": "lino-3"
+    },
+    {
+      "pub_key": {
+        "type":"AC26791624DE60",
+        "value":"dPGnFcif2bakNY9ktCEqaes/oF9cobsjZbv81/bdgfg="
+      },
+      "power": 10,
+      "name": "lino-4"
+    }    
+  ],
+  "app_hash": "",
+  "genesis_time": "0001-01-01T00:00:00Z",
+  "app_state": {
+    "accounts": [
+      {
+        "name": "Lino1",
+        "lino": "2500000000",
+        "master_key": {
+          "type": "AC26791624DE60",
+          "value": "zwan7H4w+856EQ9hTebkjXOBF71Jhk/HRKzvJgZeAGw="
+        },
+        "transaction_key": {
+          "type": "AC26791624DE60",
+          "value": "rfUHXyXJCjBIFqW2pNGT/BPpAcR2k/D9CXDme8n5qzw="
+        },
+        "post_key": {
+          "type": "AC26791624DE60",
+          "value": "sJYkookfgyD/a4lsseAipJytQX3wUuPREP2b+KFCDN0="
+        },
+        "is_validator": true,
+        "validator_pub_key": {
+          "type": "AC26791624DE60",
+          "value": "MV5P+bW3Inj5TYlHUUaeTQd/xZRB1xo7fYFpnrlnGaE="
+        }
+      },
+      {
+        "name": "Lino2",
+        "lino": "2500000000",
+        "master_key": {
+          "type": "AC26791624DE60",
+          "value": "6XXQZaoXCOxKQTaKD2/VwYEf+Z1zLVSN5+9GzE6QVV8="
+        },
+        "transaction_key": {
+          "type": "AC26791624DE60",
+          "value": "7Qo5AtmHEOufOenbfKlaMFEA9AHSXI4wwOSZEqVWjP0="
+        },
+        "post_key": {
+          "type": "AC26791624DE60",
+          "value": "G5C4UXZiFZIP3fBojhjQpSChwZywvm9pwnl4jajGYSI="
+        },
+        "is_validator": true,
+        "validator_pub_key": {
+          "type": "AC26791624DE60",
+          "value": "IrFo7eotx+Q05TrlqVTj2OFLMjQfjyaSLPCi9mXrx5k="
+        }
+      },
+      {
+        "name": "Lino3",
+        "lino": "2500000000",
+        "master_key": {
+          "type": "AC26791624DE60",
+          "value": "9yR0rlX1ap6t26J1w7owFTAUzDqHgI0Oh/BqZHOgDs0="
+        },
+        "transaction_key": {
+          "type": "AC26791624DE60",
+          "value": "+9wDjsf2Knw5lbLi5JJhdr9P8qmnfn4fsAJX60Vutqc="
+        },
+        "post_key": {
+          "type": "AC26791624DE60",
+          "value": "sYLrf7g6fAMxejV8YomVJGyHev431SwXp2ysElWjK6I="
+        },
+        "is_validator": true,
+        "validator_pub_key": {
+          "type": "AC26791624DE60",
+          "value": "rgH4I9Zu+L5OK09IRCwyeeEmtHsHrYwoQIJPc99NKVo="
+        }
+      },
+      {
+        "name": "Lino4",
+        "lino": "2500000000",
+        "master_key": {
+          "type": "AC26791624DE60",
+          "value": "9IZ+YDgBYb7GbwCa+qn2waWnnP9a0PPNX94j04wG8Vk="
+        },
+        "transaction_key": {
+          "type": "AC26791624DE60",
+          "value": "CraXC98hZbYgTyEOdBAP2LH8xw9EHX2H6Y1EfkLC6oc="
+        },
+        "post_key": {
+          "type": "AC26791624DE60",
+          "value": "Oy/6fktJ0m0Tt70/OJynFDZugFJ/KoEqcmLhHc1xmNc="
+        },
+        "is_validator": true,
+        "validator_pub_key": {
+          "type": "AC26791624DE60",
+          "value": "dPGnFcif2bakNY9ktCEqaes/oF9cobsjZbv81/bdgfg="
+        }
+      }
+    ],
+    "developers": [
+      {
+        "name": "Lino",
+        "deposit": "1000000"
+      }
+    ],
+    "infra": [
+      {
+        "name": "Lino"
+      }
+    ],
+    "total_lino": "10000000000"
+  },
+  "chain_id": "lino-0001"
+}
