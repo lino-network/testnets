@@ -57,7 +57,7 @@
     "accounts": [
       {
         "name": "validator1",
-        "lino": "1000000000",
+        "lino": "100000000",
         "reset_key": {
           "type": "tendermint/PubKeySecp256k1",
           "value": "A0ke1siaWowVK5FQmXyE6KwOUt0bBMvD8tcVCeWSgNLO"
@@ -78,7 +78,7 @@
       },
       {
         "name": "validator2",
-        "lino": "1000000000",
+        "lino": "100000000",
         "reset_key": {
           "type": "tendermint/PubKeySecp256k1",
           "value": "An+Cz4o8r7fK8gj6XCRV8Xw8mtl8qhbUlyhfENUASaol"
@@ -99,7 +99,7 @@
       },
       {
         "name": "validator3",
-        "lino": "1000000000",
+        "lino": "100000000",
         "reset_key": {
           "type": "tendermint/PubKeySecp256k1",
           "value": "Aga4w5v08rW0r+lGCJbwJiuLPZtylVEosid8NZ47i3cZ"
@@ -120,7 +120,7 @@
       },
       {
         "name": "validator4",
-        "lino": "1000000000",
+        "lino": "100000000",
         "reset_key": {
           "type": "tendermint/PubKeySecp256k1",
           "value": "Aoc13B11/7AsTnuabvs8dzFpzdiao5WYjJMlYIiFPua5"
@@ -293,7 +293,7 @@
         "deposit": "1000000",
         "web_site": "https://lino.network/",
         "description": "",
-        "app_meta_data": ""
+        "app_meta_data": "{\"login_callback\":\"http://localhost:8080\"}"
       }
     ],
     "infra": [
@@ -331,13 +331,13 @@
         "delegator_min_withdraw": {
           "amount": "200000"
         },
-        "voter_coin_return_interval": "168",
+        "voter_coin_return_interval": "24",
         "voter_coin_return_times": "7",
-        "delegator_coin_return_interval": "168",
+        "delegator_coin_return_interval": "24",
         "delegator_coin_return_times": "7"
       },
       "ProposalParam": {
-        "content_censorship_decide_hr": "168",
+        "content_censorship_decide_hr": "24",
         "content_censorship_min_deposit": {
           "amount": "10000000"
         },
@@ -345,7 +345,7 @@
         "content_censorship_pass_votes": {
           "amount": "1000000000"
         },
-        "change_param_decide_hr": "168",
+        "change_param_decide_hr": "24",
         "change_param_min_deposit": {
           "amount": "10000000000"
         },
@@ -353,7 +353,7 @@
         "change_param_pass_votes": {
           "amount": "100000000000"
         },
-        "protocol_upgrade_decide_hr": "168",
+        "protocol_upgrade_decide_hr": "24",
         "protocol_upgrade_min_deposit": {
           "amount": "100000000000"
         },
@@ -366,7 +366,7 @@
         "developer_min_deposit": {
           "amount": "100000000000"
         },
-        "developer_coin_return_interval": "168",
+        "developer_coin_return_interval": "24",
         "developer_coin_return_times": "7"
       },
       "ValidatorParam": {
@@ -379,7 +379,7 @@
         "validator_min_commiting_deposit": {
           "amount": "10000000000"
         },
-        "validator_coin_return_interval": "168",
+        "validator_coin_return_interval": "24",
         "validator_coin_return_times": "7",
         "penalty_miss_vote": {
           "amount": "2000000000"
@@ -417,6 +417,14 @@
       "PostParam": {
         "report_or_upvote_interval": "86400"
       }
+    },
+    "init_global_meta": {
+      "growth_rate": "49/500",
+      "ceiling": "49/500",
+      "floor": "3/100",
+      "max_tps": "1000",
+      "consumption_friction_rate": "1/20",
+      "consumption_freezing_period": "2"
     }
   }
 }
