@@ -87,7 +87,7 @@ laddr = "tcp://0.0.0.0:26656"
 external_address = ""
 
 # Comma separated list of seed nodes to connect to
-seeds = "60aa244ea0ce7369225625325e8a316a9de066c9@18.212.242.116:26656,29f5f6670bed9f799ed11815eb6acbeb62853d6d@54.210.182.67:26656"
+seeds = "0712d6fc1ea065a2196a8bd2e1c9569c9dbf8aea@18.217.117.249:26656,30f91e7093609ed82c18fb7074872064e4c45152@18.222.250.174:26656"
 
 # Comma separated list of nodes to keep persistent connections to
 persistent_peers = ""
@@ -187,7 +187,7 @@ index_tags = ""
 # When set to true, tells indexer to index all tags. Note this may be not
 # desirable (see the comment above). IndexTags has a precedence over
 # IndexAllTags (i.e. when given both, IndexTags will be indexed).
-index_all_tags = false
+index_all_tags = true
 
 ##### instrumentation configuration options #####
 [instrumentation]

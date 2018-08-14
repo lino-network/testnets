@@ -22,7 +22,7 @@
     {
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "XznfCa86/inetDuDHwKxxlymcHtv/5kZHS3e1pM1Tss="
+        "value": "4rgh/IbevTzo/2s3YJip1F/ih0gm153mLrIkKZTrNhI="
       },
       "power": "1000",
       "name": ""
@@ -30,7 +30,7 @@
     {
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "5lNvpGBlPcHOhzAfJqwwZqByxZ4QS6Pm93vWJvlfDBU="
+        "value": "gYLzAxZNiLOUml0O066bY7HpRgQkSKRiR3rvkRNdnw8="
       },
       "power": "1000",
       "name": ""
@@ -38,7 +38,7 @@
     {
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "BpLtPhIRXNWRxaybg155wTLadcoTFYMZ6SpjFNy5KFU="
+        "value": "je8jVbrXVq+ZR39ejYzKOj/Jyt8t4ogGLsEg2qeg6jk="
       },
       "power": "1000",
       "name": ""
@@ -46,7 +46,7 @@
     {
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "t1JlDrl3Qf0eU1DE9gBZt/qjqqbT9pkgzk62EQCYd7g="
+        "value": "2bKbCW6DTZ3CxJ+tXwwNljqIok7S8u+D5sN00eweCvk="
       },
       "power": "1000",
       "name": ""
@@ -73,7 +73,7 @@
         "is_validator": true,
         "validator_pub_key": {
           "type": "tendermint/PubKeyEd25519",
-          "value": "XznfCa86/inetDuDHwKxxlymcHtv/5kZHS3e1pM1Tss="
+          "value": "4rgh/IbevTzo/2s3YJip1F/ih0gm153mLrIkKZTrNhI="
         }
       },
       {
@@ -94,7 +94,7 @@
         "is_validator": true,
         "validator_pub_key": {
           "type": "tendermint/PubKeyEd25519",
-          "value": "5lNvpGBlPcHOhzAfJqwwZqByxZ4QS6Pm93vWJvlfDBU="
+          "value": "gYLzAxZNiLOUml0O066bY7HpRgQkSKRiR3rvkRNdnw8="
         }
       },
       {
@@ -110,7 +110,7 @@
         },
         "app_key": {
           "type": "tendermint/PubKeySecp256k1",
-          "value": "A+4ASdOHQtRHKYSIp1JVl2P4ErLuJljhqOTPPiftNbyP"
+          "value": "je8jVbrXVq+ZR39ejYzKOj/Jyt8t4ogGLsEg2qeg6jk="
         },
         "is_validator": true,
         "validator_pub_key": {
@@ -136,7 +136,7 @@
         "is_validator": true,
         "validator_pub_key": {
           "type": "tendermint/PubKeyEd25519",
-          "value": "t1JlDrl3Qf0eU1DE9gBZt/qjqqbT9pkgzk62EQCYd7g="
+          "value": "2bKbCW6DTZ3CxJ+tXwwNljqIok7S8u+D5sN00eweCvk="
         }
       },
       {
