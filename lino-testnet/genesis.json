@@ -110,12 +110,12 @@
         },
         "app_key": {
           "type": "tendermint/PubKeySecp256k1",
-          "value": "je8jVbrXVq+ZR39ejYzKOj/Jyt8t4ogGLsEg2qeg6jk="
+          "value": "A+4ASdOHQtRHKYSIp1JVl2P4ErLuJljhqOTPPiftNbyP"
         },
         "is_validator": true,
         "validator_pub_key": {
           "type": "tendermint/PubKeyEd25519",
-          "value": "BpLtPhIRXNWRxaybg155wTLadcoTFYMZ6SpjFNy5KFU="
+          "value": "je8jVbrXVq+ZR39ejYzKOj/Jyt8t4ogGLsEg2qeg6jk="
         }
       },
       {
@@ -331,13 +331,13 @@
         "delegator_min_withdraw": {
           "amount": "200000"
         },
-        "voter_coin_return_interval": "168",
+        "voter_coin_return_interval": "24",
         "voter_coin_return_times": "7",
-        "delegator_coin_return_interval": "168",
+        "delegator_coin_return_interval": "24",
         "delegator_coin_return_times": "7"
       },
       "ProposalParam": {
-        "content_censorship_decide_hr": "168",
+        "content_censorship_decide_hr": "72",
         "content_censorship_min_deposit": {
           "amount": "10000000"
         },
@@ -347,11 +347,11 @@
         },
         "change_param_decide_hr": "168",
         "change_param_min_deposit": {
-          "amount": "10000000000"
+          "amount": "100000000000"
         },
         "change_param_pass_ratio": "7/10",
         "change_param_pass_votes": {
-          "amount": "100000000000"
+          "amount": "500000000000"
         },
         "protocol_upgrade_decide_hr": "168",
         "protocol_upgrade_min_deposit": {
@@ -385,7 +385,7 @@
           "amount": "2000000000"
         },
         "penalty_miss_commit": {
-          "amount": "20000000"
+          "amount": "2000000000"
         },
         "penalty_byzantine": {
           "amount": "100000000000"
@@ -419,9 +419,9 @@
       }
     },
     "init_global_meta": {
-      "growth_rate": "49/500",
+      "growth_rate": "1/200",
       "ceiling": "49/500",
-      "floor": "3/100",
+      "floor": "1/200",
       "max_tps": "1000",
       "consumption_friction_rate": "1/20",
       "consumption_freezing_period": "168"
