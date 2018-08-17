@@ -55,16 +55,6 @@ $ export GOPATH=$HOME/go
 $ export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 ```
 
-Save and restart the terminal.
-
-_Note_: If you can't see the hidden file, use the shortcut `Command + Shift + .` in Finder.
-
-
-### Install dep
-```
-$ go get -u github.com/golang/dep/cmd/dep
-```
-
 ### Install Lino Core
 
 Now we can fetch the correct versions of each dependency by running:
