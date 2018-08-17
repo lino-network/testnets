@@ -75,10 +75,7 @@ $ cd $GOPATH/src/github.com/lino-network/
 $ git clone https://github.com/lino-network/lino
 $ cd lino
 $ git checkout v0.1.0
-$ dep ensure
-$ cd cmd/lino
-$ go build
-$ ./lino init
+$ make get_tools && make get_vendor_deps && make install
 ```
 
 
@@ -87,12 +84,13 @@ $ ./lino init
 If you go through above process, you should be able to start a node with single validator. The genesis account's private key will show up at last step of above process. Now you can start you own node by running:
 
 ```
-$ ./lino start
+$ lino start
 ```
 
 If you want to connect to Lino Testnet, you should clone this repo and copy genesis file.
 
 ```
+$ lino init
 $ git clone https://github.com/lino-network/testnets.git
 $ cp -a testnets/lino-testnet/genesis.json $HOME/.lino/config/genesis.json
 $ cp -a testnets/lino-testnet/config.toml $HOME/.lino/config/config.toml
@@ -110,6 +108,6 @@ moniker = "<your_custom_name>"
 Start the full node:
 
 ```
-$ ./lino start
+$ lino start
 ```
 You node should start syncing to our Lino Testnet.
