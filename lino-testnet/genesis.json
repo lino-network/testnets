@@ -1,6 +1,6 @@
 {
-  "genesis_time": "2018-09-16T00:36:03.565199157Z",
-  "chain_id": "test-chain-9P33lh",
+  "genesis_time": "2018-09-16T22:56:49.317649827Z",
+  "chain_id": "lino-testnet",
   "consensus_params": {
     "block_size_params": {
       "max_bytes": "22020096",
@@ -436,7 +436,7 @@
       },
       "PostParam": {
         "report_or_upvote_interval_second": "86400",
-        "post_interval_sec": "600",
+        "post_interval_sec": "0",
         "max_report_reputation": {
           "amount": "10000000"
         }
