@@ -1,6 +1,6 @@
 {
-  "genesis_time": "2018-08-14T22:18:31.558600713Z",
-  "chain_id": "lino-testnet",
+  "genesis_time": "2018-09-16T00:36:03.565199157Z",
+  "chain_id": "test-chain-9P33lh",
   "consensus_params": {
     "block_size_params": {
       "max_bytes": "22020096",
@@ -57,7 +57,9 @@
     "accounts": [
       {
         "name": "validator1",
-        "lino": "100000000",
+        "coin": {
+          "amount": "10000000000000"
+        },
         "reset_key": {
           "type": "tendermint/PubKeySecp256k1",
           "value": "A0ke1siaWowVK5FQmXyE6KwOUt0bBMvD8tcVCeWSgNLO"
@@ -78,7 +80,9 @@
       },
       {
         "name": "validator2",
-        "lino": "100000000",
+        "coin": {
+          "amount": "10000000000000"
+        },
         "reset_key": {
           "type": "tendermint/PubKeySecp256k1",
           "value": "An+Cz4o8r7fK8gj6XCRV8Xw8mtl8qhbUlyhfENUASaol"
@@ -99,7 +103,9 @@
       },
       {
         "name": "validator3",
-        "lino": "100000000",
+        "coin": {
+          "amount": "10000000000000"
+        },
         "reset_key": {
           "type": "tendermint/PubKeySecp256k1",
           "value": "Aga4w5v08rW0r+lGCJbwJiuLPZtylVEosid8NZ47i3cZ"
@@ -120,7 +126,9 @@
       },
       {
         "name": "validator4",
-        "lino": "100000000",
+        "coin": {
+          "amount": "10000000000000"
+        },
         "reset_key": {
           "type": "tendermint/PubKeySecp256k1",
           "value": "Aoc13B11/7AsTnuabvs8dzFpzdiao5WYjJMlYIiFPua5"
@@ -141,7 +149,9 @@
       },
       {
         "name": "dlivetv",
-        "lino": "1000000000",
+        "coin": {
+          "amount": "100000000000000"
+        },
         "reset_key": {
           "type": "tendermint/PubKeySecp256k1",
           "value": "A32nANbg5R836tUDi5auQ5NS6dyhZvtHtmNY5YF2pCAA"
@@ -162,7 +172,9 @@
       },
       {
         "name": "linowallet",
-        "lino": "1000000000",
+        "coin": {
+          "amount": "100000000000000"
+        },
         "reset_key": {
           "type": "tendermint/PubKeySecp256k1",
           "value": "AibdT4yMQ5+N/VO0/IN6SIPcx2bCLbqH60xoSH1n/UE/"
@@ -183,7 +195,9 @@
       },
       {
         "name": "admin",
-        "lino": "1000000000",
+        "coin": {
+          "amount": "100000000000000"
+        },
         "reset_key": {
           "type": "tendermint/PubKeySecp256k1",
           "value": "AqBLNkxp/97KiGe22khyGcLvAaydlhEokSi4tN1lOQW/"
@@ -204,7 +218,9 @@
       },
       {
         "name": "dev",
-        "lino": "1000000000",
+        "coin": {
+          "amount": "100000000000000"
+        },
         "reset_key": {
           "type": "tendermint/PubKeySecp256k1",
           "value": "AlLomINbxyVK45WE7/dvzz9qjT9kePSJV9rT89R74HV2"
@@ -225,7 +241,9 @@
       },
       {
         "name": "bounty",
-        "lino": "1000000000",
+        "coin": {
+          "amount": "100000000000000"
+        },
         "reset_key": {
           "type": "tendermint/PubKeySecp256k1",
           "value": "A5v/HJwA2Ad0GoTIsHM3eEoG9by/axdiUtekEOy06kQJ"
@@ -246,7 +264,9 @@
       },
       {
         "name": "contentmining",
-        "lino": "1000000000",
+        "coin": {
+          "amount": "100000000000000"
+        },
         "reset_key": {
           "type": "tendermint/PubKeySecp256k1",
           "value": "A1Yorhrl9lsQ/xGUVYfSIVQEk7BS8YJphP5azzMSVGjR"
@@ -267,7 +287,9 @@
       },
       {
         "name": "lino",
-        "lino": "3600000000",
+        "coin": {
+          "amount": "360000000000000"
+        },
         "reset_key": {
           "type": "tendermint/PubKeySecp256k1",
           "value": "A7jjlgk/0xGm+psyt88xpoC7LrCTrRYJWl7gfUqs0+s/"
@@ -290,7 +312,9 @@
     "developers": [
       {
         "name": "dlive",
-        "deposit": "1000000",
+        "deposit": {
+          "amount": "100000000000"
+        },
         "web_site": "https://dlive.tv/",
         "description": "",
         "app_meta_data": "{\"login_callback\":\"https://dlive.tv\"}"
@@ -300,7 +324,8 @@
       {
         "name": "lino"
       }
-    ],"genesis_param": {
+    ],
+    "genesis_param": {
       "init_from_config": true,
       "EvaluateOfContentValueParam": {
         "consumption_time_adjust_base": "3153600",
