@@ -140,7 +140,7 @@
         }
       },
       {
-        "name": "linotv",
+        "name": "dlivetv",
         "lino": "1000000000",
         "reset_key": {
           "type": "tendermint/PubKeySecp256k1",
@@ -289,19 +289,18 @@
     ],
     "developers": [
       {
-        "name": "linotv",
+        "name": "dlive",
         "deposit": "1000000",
-        "web_site": "https://lino.network/",
+        "web_site": "https://dlive.tv/",
         "description": "",
-        "app_meta_data": "{\"login_callback\":\"https://lino.tv\"}"
+        "app_meta_data": "{\"login_callback\":\"https://dlive.tv\"}"
       }
     ],
     "infra": [
       {
         "name": "lino"
       }
-    ],
-    "genesis_param": {
+    ],"genesis_param": {
       "init_from_config": true,
       "EvaluateOfContentValueParam": {
         "consumption_time_adjust_base": "3153600",
@@ -312,6 +311,7 @@
         "amount_of_consumption_exponent": "4/5"
       },
       "GlobalAllocationParam": {
+        "global_growth_rate": "49/500",
         "infra_allocation": "1/5",
         "content_creator_allocation": "13/20",
         "developer_allocation": "1/10",
@@ -322,22 +322,13 @@
         "CDN_allocation": "1/2"
       },
       "VoteParam": {
-        "voter_min_deposit": {
-          "amount": "200000000"
-        },
-        "voter_min_withdraw": {
-          "amount": "200000"
-        },
-        "delegator_min_withdraw": {
-          "amount": "200000"
-        },
-        "voter_coin_return_interval": "24",
+        "voter_coin_return_interval_second": "604800",
         "voter_coin_return_times": "7",
-        "delegator_coin_return_interval": "24",
+        "delegator_coin_return_interval_second": "604800",
         "delegator_coin_return_times": "7"
       },
       "ProposalParam": {
-        "content_censorship_decide_hr": "72",
+        "content_censorship_decide_second": "604800",
         "content_censorship_min_deposit": {
           "amount": "10000000"
         },
@@ -345,15 +336,16 @@
         "content_censorship_pass_votes": {
           "amount": "1000000000"
         },
-        "change_param_decide_hr": "168",
+        "change_param_decide_second": "604800",
+        "change_param_execution_second": "0",
         "change_param_min_deposit": {
-          "amount": "100000000000"
+          "amount": "10000000000"
         },
         "change_param_pass_ratio": "7/10",
         "change_param_pass_votes": {
-          "amount": "500000000000"
+          "amount": "100000000000"
         },
-        "protocol_upgrade_decide_hr": "168",
+        "protocol_upgrade_decide_second": "604800",
         "protocol_upgrade_min_deposit": {
           "amount": "100000000000"
         },
@@ -366,7 +358,7 @@
         "developer_min_deposit": {
           "amount": "100000000000"
         },
-        "developer_coin_return_interval": "168",
+        "developer_coin_return_interval_second": "604800",
         "developer_coin_return_times": "7"
       },
       "ValidatorParam": {
@@ -376,16 +368,16 @@
         "validator_min_voting_deposit": {
           "amount": "30000000000"
         },
-        "validator_min_commiting_deposit": {
+        "validator_min_committing_deposit": {
           "amount": "10000000000"
         },
-        "validator_coin_return_interval": "168",
+        "validator_coin_return_second": "604800",
         "validator_coin_return_times": "7",
         "penalty_miss_vote": {
           "amount": "2000000000"
         },
         "penalty_miss_commit": {
-          "amount": "2000000000"
+          "amount": "20000000"
         },
         "penalty_byzantine": {
           "amount": "100000000000"
@@ -394,12 +386,14 @@
         "absent_commit_limitation": "600"
       },
       "CoinDayParam": {
-        "days_to_recover_coin_day_stake": "7",
-        "seconds_to_recover_coin_day_stake": "604800"
+        "seconds_to_recover_coin_day": "604800"
       },
       "BandwidthParam": {
         "seconds_to_recover_bandwidth": "604800",
         "capacity_usage_per_transaction": {
+          "amount": "100000"
+        },
+        "virtual_coin": {
           "amount": "100000"
         }
       },
@@ -410,21 +404,26 @@
         "register_fee": {
           "amount": "100000"
         },
-        "first_deposit_full_stake_limit": {
+        "first_deposit_full_coin_day_limit": {
           "amount": "100000"
-        }
+        },
+        "max_num_frozen_money": "10"
       },
       "PostParam": {
-        "report_or_upvote_interval": "86400"
+        "report_or_upvote_interval_second": "86400",
+        "post_interval_sec": "600",
+        "max_report_reputation": {
+          "amount": "10000000"
+        }
+      },
+      "ReputationParam": {
+        "best_content_index_n": "10"
       }
     },
     "init_global_meta": {
-      "growth_rate": "1/200",
-      "ceiling": "49/500",
-      "floor": "1/200",
       "max_tps": "1000",
       "consumption_friction_rate": "1/20",
-      "consumption_freezing_period": "168"
+      "consumption_freezing_period_second": "604800"
     }
   }
 }
