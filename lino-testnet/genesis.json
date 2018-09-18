@@ -350,7 +350,10 @@
         "voter_coin_return_interval_second": "604800",
         "voter_coin_return_times": "7",
         "delegator_coin_return_interval_second": "604800",
-        "delegator_coin_return_times": "7"
+        "delegator_coin_return_times": "7",
+        "min_stake_in": {
+          "amount": "100000000"
+        }
       },
       "ProposalParam": {
         "content_censorship_decide_second": "604800",
@@ -416,7 +419,7 @@
       "BandwidthParam": {
         "seconds_to_recover_bandwidth": "604800",
         "capacity_usage_per_transaction": {
-          "amount": "100000"
+          "amount": "1"
         },
         "virtual_coin": {
           "amount": "100000"
