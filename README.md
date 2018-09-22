@@ -64,7 +64,7 @@ $ mkdir -p $GOPATH/src/github.com/lino-network/
 $ cd $GOPATH/src/github.com/lino-network/
 $ git clone https://github.com/lino-network/lino
 $ cd lino
-$ git checkout v0.1.0
+$ git checkout v0.1.1
 $ make get_tools && make get_vendor_deps && make install
 ```
 
@@ -74,6 +74,7 @@ $ make get_tools && make get_vendor_deps && make install
 If you go through above process, you should be able to start a node with single validator. The genesis account's private key will show up at last step of above process. Now you can start you own node by running:
 
 ```
+$ lino init
 $ lino start
 ```
 
