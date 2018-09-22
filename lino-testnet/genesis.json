@@ -50,6 +50,30 @@
       },
       "power": "1000",
       "name": ""
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "UHJlLZNsQbTviL+Qnu8IDzrW6enS/lEv6f2Lj64q5uI="
+      },
+      "power": "1000",
+      "name": ""
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "rPJuxQl/74EMSyP9X+m/KRuDRf2tacwn52Fus6owljo="
+      },
+      "power": "1000",
+      "name": ""
+    },
+    {
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "xzHwkFeJ9BeHDNN1WFUF91MREvr31UM9qVnIwqEHwBw="
+      },
+      "power": "1000",
+      "name": ""
     }
   ],
   "app_hash": "",
@@ -145,6 +169,75 @@
         "validator_pub_key": {
           "type": "tendermint/PubKeyEd25519",
           "value": "2bKbCW6DTZ3CxJ+tXwwNljqIok7S8u+D5sN00eweCvk="
+        }
+      },
+      {
+        "name": "validator5",
+        "coin": {
+          "amount": "10000000000000"
+        },
+        "reset_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "AgdZF41scAVZZYTT9WeMVtAklNsK/nbn+LtQfgA9LP9Q"
+        },
+        "transaction_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "A4yjTNjYuXNzMSr6fC3pN1TOZ0Zia/0M7qOzx2N/5TWh"
+        },
+        "app_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "A64pwb3o/Lsk4oq1BX/OC5PzcOHuriW5grxvCTVHKt1Q"
+        },
+        "is_validator": true,
+        "validator_pub_key": {
+          "type": "tendermint/PubKeyEd25519",
+          "value": "UHJlLZNsQbTviL+Qnu8IDzrW6enS/lEv6f2Lj64q5uI="
+        }
+      },
+      {
+        "name": "validator6",
+        "coin": {
+          "amount": "10000000000000"
+        },
+        "reset_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "AlTbo6Flpp6SxVG2vk94LtcmIV4soc4UECF/C3F9+oSC"
+        },
+        "transaction_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "AwOCFTwDHHrBNlpqDCn5hW9lyfZrDG7jFOo6vXAbnCCY"
+        },
+        "app_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "A2wd7veVwnXPRrU+BeaerJhdbA+Qq7pdkDgMMmKXTqOT"
+        },
+        "is_validator": true,
+        "validator_pub_key": {
+          "type": "tendermint/PubKeyEd25519",
+          "value": "rPJuxQl/74EMSyP9X+m/KRuDRf2tacwn52Fus6owljo="
+        }
+      },
+      {
+        "name": "validator7",
+        "coin": {
+          "amount": "10000000000000"
+        },
+        "reset_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "AsDRlnX3/sXbOdVVyQsvGpYbURrHm+37+pNLFiD6TD1x"
+        },
+        "transaction_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "Av2r5NmLHAgKK3PBbbr4XkEg0KDH8jq6xijWS92qxKTE"
+        },
+        "app_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "A1epkTYJWu1PyiCGmEHfoihenF6eGhyNToH/5NQaLcdp"
+        },
+        "is_validator": true,
+        "validator_pub_key": {
+          "type": "tendermint/PubKeyEd25519",
+          "value": "xzHwkFeJ9BeHDNN1WFUF91MREvr31UM9qVnIwqEHwBw="
         }
       },
       {
@@ -288,7 +381,7 @@
       {
         "name": "lino",
         "coin": {
-          "amount": "360000000000000"
+          "amount": "330000000000000"
         },
         "reset_key": {
           "type": "tendermint/PubKeySecp256k1",
@@ -330,13 +423,13 @@
       "EvaluateOfContentValueParam": {
         "consumption_time_adjust_base": "3153600",
         "consumption_time_adjust_offset": "5",
-        "num_of_consumption_on_author_offset": "7",
+        "num_of_consumption_on_author_offset": "10000",
         "total_amount_of_consumption_base": "100000000",
         "total_amount_of_consumption_offset": "5",
         "amount_of_consumption_exponent": "4/5"
       },
       "GlobalAllocationParam": {
-        "global_growth_rate": "49/500",
+        "global_growth_rate": "5/1000",
         "infra_allocation": "1/5",
         "content_creator_allocation": "13/20",
         "developer_allocation": "1/10",
@@ -348,15 +441,15 @@
       },
       "VoteParam": {
         "voter_coin_return_interval_second": "604800",
-        "voter_coin_return_times": "7",
+        "voter_coin_return_times": "12",
         "delegator_coin_return_interval_second": "604800",
-        "delegator_coin_return_times": "7",
+        "delegator_coin_return_times": "12",
         "min_stake_in": {
           "amount": "100000000"
         }
       },
       "ProposalParam": {
-        "content_censorship_decide_second": "604800",
+        "content_censorship_decide_second": "259200",
         "content_censorship_min_deposit": {
           "amount": "10000000"
         },
@@ -364,22 +457,22 @@
         "content_censorship_pass_votes": {
           "amount": "1000000000"
         },
-        "change_param_decide_second": "604800",
+        "change_param_decide_second": "259200",
         "change_param_execution_second": "0",
         "change_param_min_deposit": {
-          "amount": "10000000000"
+          "amount": "1000000000000"
         },
         "change_param_pass_ratio": "7/10",
         "change_param_pass_votes": {
-          "amount": "100000000000"
+          "amount": "10000000000000"
         },
-        "protocol_upgrade_decide_second": "604800",
+        "protocol_upgrade_decide_second": "259200",
         "protocol_upgrade_min_deposit": {
-          "amount": "100000000000"
+          "amount": "10000000000000"
         },
         "protocol_upgrade_pass_ratio": "4/5",
         "protocol_upgrade_pass_votes": {
-          "amount": "1000000000000"
+          "amount": "100000000000000"
         }
       },
       "DeveloperParam": {
@@ -387,20 +480,20 @@
           "amount": "100000000000"
         },
         "developer_coin_return_interval_second": "604800",
-        "developer_coin_return_times": "7"
+        "developer_coin_return_times": "12"
       },
       "ValidatorParam": {
         "validator_min_withdraw": {
           "amount": "100000"
         },
         "validator_min_voting_deposit": {
-          "amount": "30000000000"
-        },
-        "validator_min_committing_deposit": {
           "amount": "10000000000"
         },
+        "validator_min_committing_deposit": {
+          "amount": "30000000000"
+        },
         "validator_coin_return_second": "604800",
-        "validator_coin_return_times": "7",
+        "validator_coin_return_times": "12",
         "penalty_miss_vote": {
           "amount": "2000000000"
         },
@@ -410,7 +503,7 @@
         "penalty_byzantine": {
           "amount": "100000000000"
         },
-        "validator_list_size": "21",
+        "validator_list_size": "22",
         "absent_commit_limitation": "600"
       },
       "CoinDayParam": {
@@ -430,7 +523,7 @@
           "amount": "0"
         },
         "register_fee": {
-          "amount": "100000"
+          "amount": "10000000"
         },
         "first_deposit_full_coin_day_limit": {
           "amount": "100000"
@@ -438,10 +531,10 @@
         "max_num_frozen_money": "10"
       },
       "PostParam": {
-        "report_or_upvote_interval_second": "86400",
+        "report_or_upvote_interval_second": "60",
         "post_interval_sec": "0",
         "max_report_reputation": {
-          "amount": "10000000"
+          "amount": "1000000000"
         }
       },
       "ReputationParam": {
@@ -449,8 +542,8 @@
       }
     },
     "init_global_meta": {
-      "max_tps": "1000",
-      "consumption_friction_rate": "1/20",
+      "max_tps": "500",
+      "consumption_friction_rate": "99/1000",
       "consumption_freezing_period_second": "604800"
     }
   }
