@@ -85,6 +85,7 @@ $ lino init
 $ git clone https://github.com/lino-network/testnets.git
 $ cp -a testnets/lino-testnet/genesis.json $HOME/.lino/config/genesis.json
 $ cp -a testnets/lino-testnet/config.toml $HOME/.lino/config/config.toml
+$ lino unsafe_reset_all
 ```
 
 Lastly change the `moniker` string in the `$HOME/.lino/config/config.toml`to identify your node.
