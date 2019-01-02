@@ -95,6 +95,12 @@ Lastly change the `moniker` string in the `$HOME/.lino/config/config.toml`to ide
 moniker = "<your_custom_name>"
 ```
 
+Optional: to increase number of connections
+
+```
+$ ulimit -n 4096
+```
+
 ## Run a Full Node
 
 Start the full node:
