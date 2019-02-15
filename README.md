@@ -2,9 +2,7 @@
 
 This document explains how to connect to the latest Testnet of the [Lino Blockchain](https://github.com/lino-network/lino).
 
-NOTE: We are aware this documentation is sub-par and are actively working to improve both the tooling and the documentation to make this as painless as possible. In the meantime, join the
-[riot-chat](https://riot.im/app/#/room/!WAWAMHohvBlpTyVtSf:matrix.org) or [Gitter channel](https://gitter.im/Lino-Blockchain/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link) for technical support. Thanks very
-much for your patience :)
+NOTE: We are aware this documentation is sub-par and are actively working to improve both the tooling and the documentation to make this as painless as possible. In the meantime, join us on [Discord](https://discord.gg/TUxp3ww) for technical support. Thanks very much for your patience :)
 
 ## Software Setup (Manual Installation)
 
