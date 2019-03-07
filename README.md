@@ -21,7 +21,7 @@ brew install wget
 **Linux**
 
 ```
-sudo apt-get install wget
+sudo apt-get install wget make
 ```
 
 Note: You can check other available options for downloading `wget` [here](https://www.gnu.org/software/wget/faq.html#download).
@@ -34,9 +34,9 @@ You will require **Go 1.10+** for this tutorial.
 
 Example
 ```
-$ wget https://dl.google.com/go/go1.10.3.linux-amd64.tar.gz
+$ wget https://dl.google.com/go/go1.11.linux-amd64.tar.gz
 
-$ sudo tar -xvf go1.10.3.linux-amd64.tar.gz
+$ sudo tar -xvf go1.11.linux-amd64.tar.gz
 $ sudo mv go /usr/local
 ```
 
@@ -62,8 +62,8 @@ $ mkdir -p $GOPATH/src/github.com/lino-network/
 $ cd $GOPATH/src/github.com/lino-network/
 $ git clone https://github.com/lino-network/lino
 $ cd lino
-$ git checkout v0.1.5
-$ make get_tools && make get_vendor_deps && make install
+$ git checkout v0.2.0
+$ make get_tools && make install
 ```
 
 
@@ -81,9 +81,16 @@ If you want to connect to Lino Testnet, you should clone this repo and copy gene
 ```
 $ lino init
 $ git clone https://github.com/lino-network/testnets.git
-$ cp -a testnets/lino-testnet/genesis.json $HOME/.lino/config/genesis.json
-$ cp -a testnets/lino-testnet/config.toml $HOME/.lino/config/config.toml
-$ lino unsafe_reset_all
+$ cp -a testnets/lino-testnet-upgrade1/genesis.json $HOME/.lino/config/genesis.json
+$ cp -a testnets/lino-testnet-upgrade1/config.toml $HOME/.lino/config/config.toml
+$ lino unsafe-reset-all
+```
+
+If you wanna sync the blocks from the first block, please download all previous blockchain data from S3:
+
+```
+$ wget https://s3.amazonaws.com/lino-blockchain-opendata/prd/prevstates.tar.gz
+$ tar -xzvf prevstates.tar.gz -C ~/.lino/
 ```
 
 Lastly change the `moniker` string in the `$HOME/.lino/config/config.toml`to identify your node.
