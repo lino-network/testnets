@@ -30,7 +30,7 @@ Note: You can check other available options for downloading `wget` [here](https:
 ### Install [Go](https://golang.org/)
 
 Install `go` following the [instructions](https://golang.org/doc/install) in the official golang website.
-You will require **Go 1.10+** for this tutorial.
+You will require **Go 1.11+** for this tutorial.
 
 Example
 ```
@@ -62,7 +62,7 @@ $ mkdir -p $GOPATH/src/github.com/lino-network/
 $ cd $GOPATH/src/github.com/lino-network/
 $ git clone https://github.com/lino-network/lino
 $ cd lino
-$ git checkout v0.2.3
+$ git checkout v0.2.6
 $ make get_tools && make install
 ```
 
