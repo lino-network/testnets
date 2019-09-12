@@ -1,6 +1,6 @@
 {
   "genesis_time": "2019-09-07T00:03:45.027782606Z",
-  "chain_id": "lino-stg-upgrade6",
+  "chain_id": "lino-stg-upgrade7",
   "consensus_params": {
     "block": {
       "time_iota_ms": "1000",
