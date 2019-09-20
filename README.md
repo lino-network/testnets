@@ -30,13 +30,13 @@ Note: You can check other available options for downloading `wget` [here](https:
 ### Install [Go](https://golang.org/)
 
 Install `go` following the [instructions](https://golang.org/doc/install) in the official golang website.
-You will require **Go 1.11+** for this tutorial.
+You will require **Go 1.12+** for this tutorial.
 
 Example
 ```
-$ wget https://dl.google.com/go/go1.11.linux-amd64.tar.gz
+$ wget https://dl.google.com/go/go1.12.9.linux-amd64.tar.gz
 
-$ sudo tar -xvf go1.11.linux-amd64.tar.gz
+$ sudo tar -xvf go1.12.9.linux-amd64.tar.gz
 $ sudo mv go /usr/local
 ```
 
@@ -62,7 +62,7 @@ $ mkdir -p $GOPATH/src/github.com/lino-network/
 $ cd $GOPATH/src/github.com/lino-network/
 $ git clone https://github.com/lino-network/lino
 $ cd lino
-$ git checkout v0.2.10
+$ git checkout v0.3.5
 $ make get_tools && make install
 ```
 
@@ -76,20 +76,19 @@ $ lino init
 $ lino start
 ```
 
-If you want to connect to Lino Testnet, you should clone this repo and copy genesis file.
+If you want to connect to Lino Testnet, you should copy config and genesis file.
 
 ```
 $ lino init
-$ git clone https://github.com/lino-network/testnets.git
-$ cp -a testnets/lino-testnet-upgrade1/genesis.json $HOME/.lino/config/genesis.json
-$ cp -a testnets/lino-testnet-upgrade1/config.toml $HOME/.lino/config/config.toml
+$ cp -a genesis/upgrade2/genesis.json $HOME/.lino/config/genesis.json
+$ cp -a genesis/upgrade2/config.toml $HOME/.lino/config/config.toml
 $ lino unsafe-reset-all
 ```
 
 If you wanna sync the blocks from the first block, please download all previous blockchain data from S3:
 
 ```
-$ wget https://s3.amazonaws.com/lino-blockchain-opendata/prd/prevstates.tar.gz
+$ wget https://lino-blockchain-opendata.s3.amazonaws.com/prd/prevstates.tar.gz
 $ tar -xzvf prevstates.tar.gz -C ~/.lino/
 ```
 
@@ -113,7 +112,7 @@ Start the full node:
 ```
 $ lino start
 ```
-You node should start syncing to our Lino Testnet.
+Your node should start syncing to our Lino Testnet.
 
 ## Join as Validator
 
@@ -130,4 +129,4 @@ If you got error:
 ERROR: CheckTx failed: (155) {"codespace":"lino","code":155,"message":"msg: signature verification failed, chain-id:lino-testnet-upgrade1, seq:n"}
 ```
 
-just put the sequence number to the command above.
+just correct the sequence number and chain id to the command above.
