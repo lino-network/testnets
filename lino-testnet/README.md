@@ -1,3 +1,16 @@
+* [JSON RPC API](#JSON-RPC-API)  
+* [JavaScript API](#JavaScript-API)
+* [JSON-RPC Endpoint](#JSON-RPC-Endpoint)
+* [JSON-RPC API Reference](#JSON-RPC-API-Reference)
+    * [Blockchain Status](#Blockchain-Status)
+    * [Block Info](#Block-Info)
+    * [Tx Info](#Tx-Info)
+    * [Account Info](#Account-Info)
+    * [Account Bank](#Account-Bank)
+    * [Post Info](#Post-Info)
+    * [Stake Info](#Stake-Info)
+    * [Validator Info](#Validator-Info)
+
 # JSON RPC API
 ## JavaScript API
 To talk to an Lino node from inside a JavaScript application use the [lino-js](https://github.com/lino-network/lino-js) library, which gives a convenient interface for the RPC methods. See the  [lino-js](https://github.com/lino-network/lino-js) library for more.
