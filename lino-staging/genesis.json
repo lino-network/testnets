@@ -1,6 +1,6 @@
 {
-  "genesis_time": "2019-09-07T00:03:45.027782606Z",
-  "chain_id": "lino-stg-upgrade7",
+  "genesis_time": "2019-10-08T18:43:53.125347834Z",
+  "chain_id": "lino-stg-upgrade8",
   "consensus_params": {
     "block": {
       "time_iota_ms": "1000",
@@ -24,20 +24,15 @@
     "reserve_pool": {
       "amount": "0"
     },
+    "init_coin_price": "1200",
     "developers": [],
-    "infra": [],
     "genesis_param": {
       "init_from_config": true,
       "GlobalAllocationParam": {
         "global_growth_rate": "0.005",
-        "infra_allocation": "0.2",
         "content_creator_allocation": "0.4",
-        "developer_allocation": "0.35",
+        "developer_allocation": "0.55",
         "validator_allocation": "0.05"
-      },
-      "InfraInternalAllocationParam": {
-        "storage_allocation": "0.5",
-        "CDN_allocation": "0.5"
       },
       "VoteParam": {
         "voter_coin_return_interval_second": "604800",
@@ -83,28 +78,24 @@
         "developer_coin_return_times": "12"
       },
       "ValidatorParam": {
-        "validator_min_withdraw": {
-          "amount": "100000"
-        },
-        "validator_min_voting_deposit": {
-          "amount": "20000000000"
-        },
-        "validator_min_committing_deposit": {
+        "validator_min_deposit": {
           "amount": "20000000000"
         },
         "validator_coin_return_second": "604800",
-        "validator_coin_return_times": "12",
-        "penalty_miss_vote": {
-          "amount": "2000000000"
-        },
+        "validator_coin_return_times": "7",
         "penalty_miss_commit": {
           "amount": "20000000"
         },
         "penalty_byzantine": {
-          "amount": "100000000000"
+          "amount": "100000000"
         },
-        "validator_list_size": "22",
-        "absent_commit_limitation": "600"
+        "absent_commit_limitation": "600",
+        "oncall_size": "16",
+        "standby_size": "5",
+        "validator_revoke_pending_sec": "604800",
+        "oncall_inflation_weight": "2",
+        "standby_inflation_weight": "1",
+        "max_voted_validators": "3"
       },
       "CoinDayParam": {
         "seconds_to_recover_coin_day": "604800"
@@ -118,9 +109,9 @@
           "amount": "100000"
         },
         "general_msg_quota_ratio": "0.2",
-        "general_msg_ema_factor": "0.1",
+        "general_msg_ema_factor": "0.025",
         "app_msg_quota_ratio": "0.8",
-        "app_msg_ema_factor": "0.1",
+        "app_msg_ema_factor": "0.025",
         "expected_max_mps": "300",
         "msg_fee_factor_a": "6",
         "msg_fee_factor_b": "10",
@@ -134,7 +125,7 @@
           "amount": "0"
         },
         "register_fee": {
-          "amount": "10000000"
+          "amount": "500000"
         },
         "first_deposit_full_coin_day_limit": {
           "amount": "100000"
@@ -149,14 +140,23 @@
         }
       },
       "ReputationParam": {
-        "best_content_index_n": "20"
+        "best_content_index_n": "200",
+        "user_max_n": "50"
+      },
+      "PriceParam": {
+        "testnet_mode": true,
+        "update_every": "3600",
+        "feed_every": "600",
+        "history_max_len": "71",
+        "penalty_miss_feed": {
+          "amount": "1000000000"
+        }
       }
     },
     "init_global_meta": {
       "max_tps": "500",
       "consumption_friction_rate": "0.099",
       "consumption_freezing_period_second": "604800"
-    },
-    "reputation": null
+    }
   }
 }
