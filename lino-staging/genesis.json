@@ -1,6 +1,6 @@
 {
-  "genesis_time": "2019-10-08T18:43:53.125347834Z",
-  "chain_id": "lino-stg-upgrade9",
+  "genesis_time": "2019-10-14T18:21:33.490538109Z",
+  "chain_id": "lino-stg-upgrade10",
   "consensus_params": {
     "block": {
       "time_iota_ms": "1000",
@@ -35,10 +35,10 @@
         "validator_allocation": "0.05"
       },
       "VoteParam": {
-        "voter_coin_return_interval_second": "604800",
-        "voter_coin_return_times": "12",
-        "delegator_coin_return_interval_second": "604800",
-        "delegator_coin_return_times": "12",
+        "voter_coin_return_interval_second": "86401",
+        "voter_coin_return_times": "1",
+        "delegator_coin_return_interval_second": "86401",
+        "delegator_coin_return_times": "1",
         "min_stake_in": {
           "amount": "100000000"
         }
@@ -79,7 +79,7 @@
       },
       "ValidatorParam": {
         "validator_min_deposit": {
-          "amount": "20000000000"
+          "amount": "10000000000"
         },
         "validator_coin_return_second": "604800",
         "validator_coin_return_times": "7",
@@ -125,7 +125,7 @@
           "amount": "0"
         },
         "register_fee": {
-          "amount": "500000"
+          "amount": "10000"
         },
         "first_deposit_full_coin_day_limit": {
           "amount": "100000"
