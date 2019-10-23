@@ -1,6 +1,6 @@
 {
-  "genesis_time": "2019-10-14T18:21:33.490538109Z",
-  "chain_id": "lino-stg-upgrade10",
+  "genesis_time": "2019-10-23T23:12:28.742499217Z",
+  "chain_id": "lino-stg-upgrade11",
   "consensus_params": {
     "block": {
       "time_iota_ms": "1000",
@@ -20,11 +20,63 @@
   "app_hash": "",
   "app_state": {
     "load_prev_states": true,
-    "accounts": [],
-    "reserve_pool": {
-      "amount": "0"
+    "genesis_pools": {
+      "pools": [
+        {
+          "name": "inflation/developer",
+          "amount": {
+            "amount": "0"
+          }
+        },
+        {
+          "name": "inflation/validator",
+          "amount": {
+            "amount": "0"
+          }
+        },
+        {
+          "name": "inflation/consumption",
+          "amount": {
+            "amount": "0"
+          }
+        },
+        {
+          "name": "vote/stake-in",
+          "amount": {
+            "amount": "0"
+          }
+        },
+        {
+          "name": "vote/stake-return",
+          "amount": {
+            "amount": "0"
+          }
+        },
+        {
+          "name": "vote/friction",
+          "amount": {
+            "amount": "0"
+          }
+        },
+        {
+          "name": "dev/ida-reserve-pool",
+          "amount": {
+            "amount": "100000000000000"
+          }
+        },
+        {
+          "name": "account/vesting",
+          "amount": {
+            "amount": "900000000000000"
+          }
+        }
+      ],
+      "total": {
+        "amount": "1000000000000000"
+      }
     },
     "init_coin_price": "1200",
+    "accounts": [],
     "developers": [],
     "genesis_param": {
       "init_from_config": true,
@@ -95,7 +147,8 @@
         "validator_revoke_pending_sec": "604800",
         "oncall_inflation_weight": "2",
         "standby_inflation_weight": "1",
-        "max_voted_validators": "3"
+        "max_voted_validators": "3",
+        "slash_limitation": "10"
       },
       "CoinDayParam": {
         "seconds_to_recover_coin_day": "604800"
@@ -112,7 +165,7 @@
         "general_msg_ema_factor": "0.025",
         "app_msg_quota_ratio": "0.8",
         "app_msg_ema_factor": "0.025",
-        "expected_max_mps": "300",
+        "expected_max_mps": "150",
         "msg_fee_factor_a": "6",
         "msg_fee_factor_b": "10",
         "max_mps_decay_rate": "0.99",
